@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber Fan Page</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffe6f2, #ffb3d9);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff4d88;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px; /* Adjusted gap for larger images */
+        }
+
+        .gallery .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #fff;
+            max-width: 200px; /* Increased for larger images */
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .love-letter {
+            text-align: center;
+            padding: 30px;
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffffff, #f8d6e1);
+            border: 2px solid #ff4d88;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            font-size: 1.2em;
+            line-height: 1.6;
+            position: relative;
+            color: #333;
+        }
+
+        .love-letter h2 {
+            font-size: 1.5em;
+            color: #ff4d88;
+            margin-bottom: 20px;
+        }
+
+        .love-letter p {
+            margin: 0;
+        }
+
+        .love-letter:before {
+            content: '💖';
+            font-size: 2em;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .love-letter:after {
+            content: '💖';
+            font-size: 2em;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer {
+            background-color: #ff4d88;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 50px 50px 0 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .heart {
+            color: #fff;
+            animation: heartbeat 1.5s infinite;
+            font-size: 1.5em;
+        }
+
+        .footer-hearts {
+            margin-top: 10px;
+            font-size: 2em;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #ff4d88;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #e04374;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Justin Bieber Fan Page</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="justin1.jpg" alt="Justin Bieber Image 1">
+        </div>
+        <div class="card">
+            <img src="justin2.jpg" alt="Justin Bieber Image 2">
+        </div>
+        <div class="card">
+            <img src="justin3.jpg" alt="Justin Bieber Image 3">
+        </div>
+        <div class="card">
+            <img src="justin4.jpg" alt="Justin Bieber Image 4">
+        </div>
+        <div class="card">
+            <img src="justin5.jpg" alt="Justin Bieber Image 5">
+        </div>
+    </div>
+
+    <div class="love-letter">
+        <h2>Dear Justin,</h2>
+        <p>From the moment I first heard your music, you captured my heart. Your voice, your passion, and your kindness 
+        shine through every note you sing. You’ve touched so many lives, including mine, with your incredible talent 
+        and your genuine spirit. I want you to know how much you mean to me and to all of us who adore you. Your journey 
+        has been an inspiration, and I am endlessly grateful for the joy you bring into my life. Thank you for being 
+        you, for your amazing music, and for spreading love and positivity. I’ll always be here, cheering you on every 
+        step of the way. Keep shining bright, Justin. You have a fan for life.<br><br>
+        With all my love,<br>
+        A Belieber</p>
+    </div>
+
+    <footer>
+        <p>Made with <span class="heart">❤</span> by Beliebers</p>
+        <div class="footer-hearts">
+            <span class="heart">❤</span>
+            <span class="heart">❤</span>
+            <span class="heart">❤</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
